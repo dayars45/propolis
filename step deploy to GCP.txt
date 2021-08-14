@@ -1,0 +1,18 @@
+Project ID : umarbeepro-springboot
+
+on project springboot :
+1. add into pom.xml :
+<!-- plugin for deploy in google cloud platform -->
+<plugin>
+	<groupId>com.google.cloud.tools</groupId>
+	<artifactId>appengine-maven-plugin</artifactId>
+	<version>2.1.0</version>
+	<configuration>
+	  <version>1</version>
+	  <projectId>GCLOUD_CONFIG</projectId>
+	</configuration>
+</plugin>
+2. gcloud config set project umarbeepro-springboot
+3. gcloud config list
+4. right klik on project -> maven build -> spring-boot:run => for test running project in local
+5. right klik on project -> maven build -> appengine:deploy => deploy on google cloud platform

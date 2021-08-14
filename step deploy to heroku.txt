@@ -1,0 +1,14 @@
+Step deploy to heroku :
+
+install heroku CLI
+buka pada git bash pada project 
+heroku update
+heroku login
+git init
+git add .
+git commit -m "first commit"
+heroku create
+git push heroku master
+heroku open
+heroku logs --tail
+heroku app:rename --app boiling-journey-38176 springboot-britishrpopolis
